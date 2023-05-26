@@ -23,23 +23,23 @@ class Solution {
 
 let solution = Solution()
 
-//var nums1 = [1,2,3,0,0,0]
-//var nums2 = [2,5,6]
-//
-//solution.merge(&nums1, 3, nums2, 3)
-//print(nums1)
-//
-//var nums3 = [1]
-//var nums4: [Int] = []
-//
-//solution.merge(&nums3, 1, nums4, 0)
-//print(nums3)
-//
-//var nums5 = [0]
-//var nums6 = [1]
-//
-//solution.merge(&nums5, 0, nums6, 1)
-//print(nums5)
+var nums1 = [1,2,3,0,0,0]
+var nums2 = [2,5,6]
+
+solution.merge(&nums1, 3, nums2, 3)
+print(nums1)
+
+var nums3 = [1]
+var nums4: [Int] = []
+
+solution.merge(&nums3, 1, nums4, 0)
+print(nums3)
+
+var nums5 = [0]
+var nums6 = [1]
+
+solution.merge(&nums5, 0, nums6, 1)
+print(nums5)
 
 var nums7 = [4,0,0,0,0,0]
 var nums8 = [1,2,3,5,6]
