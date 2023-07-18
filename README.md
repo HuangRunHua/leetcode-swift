@@ -1,4 +1,4 @@
-# Swift Solution for LeetCode Coding Interviews (剑指Offer)
+# Swift Solution for LeetCode Coding Interviews
 ### 字符串
 
 #### 简单
