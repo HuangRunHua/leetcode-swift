@@ -11,7 +11,11 @@
 
 [剑指 Offer 20. 表示数值的字符串](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer20-表示数值的字符串.playground/Contents.swift)
 
+[剑指 Offer 20. 表示数值的字符串 (解法2: 更通俗易懂的有限状态自由机)](https://github.com/HuangRunHua/leetcode-swift/blob/main/剑指Offer/剑指Offer20-表示数值的字符串解法二.playground/Contents.swift)
+
 [剑指 Offer 67. 把字符串转换成整数](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer67-把字符串转换成整数.playground/Contents.swift)
+
+[剑指 Offer 67. 把字符串转换成整数 (解法2: 有限状态自由机)](https://github.com/HuangRunHua/leetcode-swift/blob/main/剑指Offer/剑指Offer67-把字符串转换成整数解法2.playground/Contents.swift)
 
 ### 链表
 
