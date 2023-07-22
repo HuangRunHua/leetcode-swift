@@ -67,7 +67,7 @@ class Solution {
         return head
     }
     
-    func deleteNode(_ head: ListNode?, _ val: Int) -> ListNode? {
+    func deleteNodeSolution2(_ head: ListNode?, _ val: Int) -> ListNode? {
         if head == nil {
             return head
         }
@@ -94,6 +94,29 @@ class Solution {
             }
         }
         return head
+    }
+    
+    func deleteNode(_ head: ListNode?, _ val: Int) -> ListNode? {
+        /// 定义一个新的头节点，该节点指向题目的 head 头节点
+        let newhead: ListNode? = ListNode(0, head)
+        /// 当前遍历的节点用于遍历
+        var current: ListNode? = newhead
+        /// 检查下一个元素是否存在
+        while current?.next != nil {
+            /// 判断下一个元素是否是要删除的元素
+            if let nextVal = current?.next?.val, nextVal == val {
+                /// 设置临时变量存放下下个元素
+                let temp = current?.next?.next
+                /// 直接越过下一个元素将当前的元素指向下下个元素
+                current?.next = temp
+                /// 删除完成直接跳出循环
+                break
+            }
+            /// 若没有找到当前元素则继续遍历
+            current = current?.next
+        }
+        /// 注意返回新头节点指向的下一个元素
+        return newhead?.next
     }
 }
 
