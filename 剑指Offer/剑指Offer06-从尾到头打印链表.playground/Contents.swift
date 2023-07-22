@@ -56,7 +56,7 @@ class Solution {
     }
     /// 执行用时：16 ms, 在所有 Swift 提交中击败了 65.74% 的用户
     /// 内存消耗：15.5 MB, 在所有 Swift 提交中击败了 37.96% 的用户
-    func reversePrint(_ head: ListNode?) -> [Int] {
+    func reversePrintSolution2(_ head: ListNode?) -> [Int] {
         var result: [Int] = []
         
         var startNode = head
@@ -68,6 +68,16 @@ class Solution {
         }
         
         return result.reversed()
+    }
+    
+    /// 执行用时：12 ms, 在所有 Swift 提交中击败了 94.34% 的用户
+    /// 内存消耗：15.5 MB, 在所有 Swift 提交中击败了 59.43% 的用户
+    private var res: [Int] = []
+    func reversePrint(_ head: ListNode?) -> [Int] {
+        if head == nil { return [] }
+        reversePrint(head?.next)
+        if let val = head?.val { res.append(val) }
+        return res
     }
 }
 
