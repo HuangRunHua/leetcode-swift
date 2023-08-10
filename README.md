@@ -199,6 +199,8 @@
 
 [剑指 Offer 19. 正则表达式匹配](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer19-正则表达式匹配.playground/Contents.swift)
 
+[剑指 Offer 19. 正则表达式匹配解法2](https://github.com/HuangRunHua/leetcode-swift/blob/main/剑指Offer/剑指Offer19.正则表达式匹配解法2.playground/Contents.swift)
+
 ### 位运算
 
 #### 简单
