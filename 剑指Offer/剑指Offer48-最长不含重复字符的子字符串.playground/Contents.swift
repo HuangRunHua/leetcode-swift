@@ -21,7 +21,7 @@ class Solution {
     /// `dp`的递推关系与`j-i`的长度有关系:
     /// - 当`dp[j-1] < j-i 时候 dp[j] = dp[j-1] + 1` 此时说明最近的相同字符在当前最长字符之外
     /// - 当`dp[j-1] >= j-i 时候 dp[j] = j - i` 此时说明最近的相同字符在当前最长字符里面
-    func lengthOfLongestSubstring(_ s: String) -> Int {
+    func lengthOfLongestSubstringSolution1(_ s: String) -> Int {
         /// charLatestPositionDict 的 key 表示每一个字符，value 表示使用各字符最后一次出现的索引位置 。
         var charLatestPositionDict: [Character: Int] = [:]
         /// temp 用于存储当前字符的`dp[j]`数值, res 用于存储最终的结果
@@ -38,6 +38,31 @@ class Solution {
             res = max(res, temp)
         }
         return res
+    }
+    
+    func lengthOfLongestSubstring(_ s: String) -> Int {
+        var N = s.count
+        if N == 0 { return 0 }
+        var dp: [Int] = Array(repeating: 1, count: N + 1)
+        dp[0] = 0
+        /// 哈希表的键表示字符, 值表示字符最后出现的位置
+        var dict: [Character: Int] = [:]
+        let startIndex = s.startIndex
+        s.enumerated().forEach { i, c in
+            /// 若包含该字符，则最长的字符串长度与**当前字符和前一个相同字符的距离**有关系
+            /// 标记当前字符索引为 i, 前一个相同字符的索引为 j,
+            /// 则如果 i - j 大于 dp[i-1]，此时dp[i] = dp[i-1] + 1
+            /// 则如果 i - j 小于等于 dp[i-1]，此时dp[i] = i - j
+            let j = dict[c, default: -1]
+            if i - j > dp[i] {
+                dp[i+1] = dp[i] + 1
+            } else {
+                dp[i+1] = i - j
+            }
+            /// 更新字符最后出现的位置
+            dict[c] = i
+        }
+        return dp.max()!
     }
 }
 
