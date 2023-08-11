@@ -181,6 +181,8 @@
 
 [剑指 Offer 42. 连续子数组的最大和](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer42-连续子数组的最大和.playground/Contents.swift)
 
+[剑指 Offer 42. 连续子数组的最大和(模板套路解法)](https://github.com/HuangRunHua/leetcode-swift/blob/main/剑指Offer/剑指Offer42-连续子数组的最大和(解法2).playground/Contents.swift)
+
 #### 中等
 
 [剑指 Offer 63. 股票的最大利润](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer63-股票的最大利润.playground/Contents.swift)
