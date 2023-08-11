@@ -16,7 +16,7 @@ class Solution {
     /// 设动态规划矩阵`dp`
     /// `dp(i,j)` 代表从棋盘的左上角开始，到达单元格时能拿到礼物的最大累计价值。
     /// 每一个格子的最优解是由左边与上面两个格子的最优解来推导而来
-    func maxValue(_ grid: [[Int]]) -> Int {
+    func maxValueSolution1(_ grid: [[Int]]) -> Int {
         var _grid: [[Int]] = grid
         for i in 0..<_grid.count {
             for j in 0..<_grid[0].count {
@@ -36,6 +36,27 @@ class Solution {
         }
         /// 最右下角的数即为最大值
         return _grid[_grid.count-1][_grid[0].count-1]
+    }
+    
+    func maxValue(_ grid: [[Int]]) -> Int {
+        let W = grid.count
+        let H = grid[0].count
+        var dp: [[Int]] = Array(repeating:
+                                    Array(repeating: 0, count: H+1),
+                                count: W+1)
+        dp[1][1] = grid[0][0]
+        for i in 1...W {
+            for j in 1...H {
+                if i == 1 {
+                    dp[i][j] = dp[i][j-1] + grid[i-1][j-1]
+                } else if j == 1 {
+                    dp[i][j] = dp[i-1][j] + grid[i-1][j-1]
+                } else {
+                    dp[i][j] = grid[i-1][j-1] + max(dp[i-1][j], dp[i][j-1])
+                }
+            }
+        }
+        return dp[W][H]
     }
 }
 
