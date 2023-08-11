@@ -9,7 +9,7 @@ import Foundation
 /// 输出: 5
 /// 解释: 12258有5种不同的翻译，分别是"bccfi", "bwfi", "bczi", "mcfi"和"mzi"
 class Solution {
-    func translateNum(_ num: Int) -> Int {
+    func translateNumSolution1(_ num: Int) -> Int {
         if String(num).count == 1 { return 1 }
         
         /// `F(0) = F(1) = 1`
@@ -29,6 +29,24 @@ class Solution {
             a = c
         }
         return a
+    }
+    
+    func translateNum(_ num: Int) -> Int {
+        let N = String(num).count
+        if N == 1 { return 1 }
+        let numStr: String = String(num)
+        var dp: [Int] = Array(repeating: 0, count: N+1)
+        dp[0] = 1
+        dp[1] = 1
+        for i in 2...N {
+            let tempStr = String(Array(numStr)[i-2..<i])
+            if tempStr.first! != "0" && tempStr <= "25" {
+                dp[i] = dp[i-1] + dp[i-2]
+            } else {
+                dp[i] = dp[i-1]
+            }
+        }
+        return dp[N]
     }
 }
 
