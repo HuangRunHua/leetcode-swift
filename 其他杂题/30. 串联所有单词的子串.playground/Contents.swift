@@ -16,56 +16,69 @@ import Foundation
 /// 子串 "foobar" 开始位置是 9。它是 words 中以 ["foo","bar"] 顺序排列的连接。
 /// 输出顺序无关紧要。返回 [9,0] 也是可以的。
 class Solution {
+    private var wordsDict: [String: Int] = [:]
+    private var slideLength: Int = 0
+    private var results: [Int] = []
+    private var s: [Character] = []
+    private var words: [String] = []
+    
     func findSubstring(_ s: String, _ words: [String]) -> [Int] {
-        let _s: [Character] = Array(s)
-        return slidingWindow(_s, words)
+        self.s = Array(s)
+        self.words = words
+        self.wordsDict = generateHashTable(words)
+        self.slideLength = words[0].count
+        self.results = []
+        return _findSubstring()
+    }
+    /// **思想: **第一层循环一次只移动一个字符，第二层循环的滑动窗口每次移动一个字符串的长度去匹配可能的结果
+    /// 注意到第一层其实只需要移动单个字符的长度即可，因为后续的起始点均会被包括
+    private func _findSubstring() -> [Int] {
+        var (left, right): (Int, Int) = (0, 0)
+        while right < slideLength {
+            /// 从第一个字符开始，内部滑动窗口一次移动单个字符的长度
+            slidingWindow(left, right)
+            /// 当内部滑动窗口滑动到末尾时候代表以left开头的情况已经被扫描过了
+            /// 从left+1开始继续按照单个字符串滑动窗口
+            right += 1
+            left += 1
+        }
+        return results
     }
     
-    private func slidingWindow(_ s: [Character], _ words: [String]) -> [Int] {
+    private func slidingWindow(_ left: Int, _ right: Int) {
         /// 针对于words为单个字符的情况采用哈希表`key=char value=count`来存储
         /// 此时相当于将单个字符变成了单个字符串此时采用哈希表`key=word value=count`来存储
-        let wordsDict: [String: Int] = generateHashTable(words)
-        var need: [String: Int] = [:]
-        var (left, right, valid): (Int, Int, Int) = (0, 0, 0)
-        /// 用于存储当前搜索的字符串
-        var tempStr: String = ""
-        var tempStrs: [String] = []
-        var resIndex: [Int] = []
-        while right < s.count {
-            /// 即将移入窗口的字符
-            let char = s[right]
-            right += 1
+        var (l, r, valid) = (left, right, 0)
+        var window: [String: Int] = [:]
+        while r <= s.count-slideLength {
+            /// 即将移入窗口的字符串
+            let curStr = String(s[r..<r+slideLength])
+            /// 滑动窗口一次移动一个字符的长度
+            r += slideLength
             /// 更新窗口内的数据
-            /// 添加当前的数据到tempStr用于后续检查数据是否存在于哈希表中
-            tempStr.append(char)
-            /// 此时搜索的第一个字符的长度已经等于子串的长度，判断该搜索的字符是否属于其中一个子串
-            if tempStr.count == words[0].count {
-                /// 搜索的字符串属于哈希表中则更新临时哈希表
-                if wordsDict.keys.contains(tempStr) {
-                    need[tempStr, default: 0] += 1
-                    if need[tempStr] == wordsDict[tempStr] {
-                        valid += 1
-                        
-                    }
-                } else {
-                    /// 说明找到的单词不属于words中任意一个此时重制tempStr使其继续搜索其他单词
-                    tempStr = ""
+            if wordsDict.keys.contains(curStr) {
+                window[curStr, default: 0] += 1
+                if window[curStr] == wordsDict[curStr] {
+                    valid += 1
                 }
             }
-            print(tempStrs)
             /// 滑动窗口收缩的条件
-            while right-left >= words.count*words[0].count {
-                let popChar = s[left]
-                left += 1
+            while r-l >= words.count*words[0].count {
                 if valid == wordsDict.count {
-                    resIndex.append(left)
-                    tempStrs.append(tempStr)
-                    /// 重制tempStr使其继续搜索其他单词
-                    tempStr = ""
+                    results.append(l)
+                }
+                /// 滑动窗口一次移动一个字符的长度
+                let popStr: String = String(s[l..<l+slideLength])
+                l += slideLength
+                
+                if wordsDict.keys.contains(popStr) {
+                    if window[popStr] == wordsDict[popStr] {
+                        valid -= 1
+                    }
+                    window[popStr, default: 0] -= 1
                 }
             }
         }
-        return []
     }
     
     private func generateHashTable(_ words: [String]) -> [String: Int] {
@@ -76,4 +89,15 @@ class Solution {
 }
 
 let solution = Solution()
-solution.findSubstring("barfoothefoobarman", ["foo","bar"])
+print(solution.findSubstring("barfoothefoobarman", ["foo","bar"]))
+print(solution.findSubstring("wordgoodgoodgoodbestword", ["word","good","best","word"]))
+print(solution.findSubstring("barfoofoobarthefoobarman", ["bar","foo","the"]))
+print(solution.findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"]))
+print(solution.findSubstring("wordgoodgoodgoodbestword", ["word","good","best","good"]))
+print(solution.findSubstring("aniuzhirunhuarun", ["zhi","run","hua","run"]))
+print(solution.findSubstring("aaaaaa", ["aa","aa"]))
+print(solution.findSubstring("ababaab", ["ab","ba","ba"]))
+
+
+
+
