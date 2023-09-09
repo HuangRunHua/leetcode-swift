@@ -1,0 +1,85 @@
+# Solutions for LeetCode Sliding Window
+
+本文件夹只包含`README`文档，文档主要整理平时刷题时候遇到的滑动窗口的问题以及对应的题解链接，题解的代码存储在路径`其他杂题/`中。
+
+**滑动窗口**指的是这样一类问题的求解方法，在数组上通过双指针同向移动而解决的一类问题。其实这样的问题我们可以不必为它们专门命名一个名字，它们的解法其实是很自然的。
+
+> **滑动窗口可以处理几乎所有的子串问题**
+
+## 代码框架
+
+```swift
+private func generateDict(_ list: [Character]) -> [Character: Int] {
+    var dict: [Character: Int] = [:]
+    for char in list {
+        dict[char, default: 0] += 1
+    }
+    return dict
+}
+
+func slidingWindow(_ s: [Character], _ p: [Character]) {
+    var window: [Character: Int] = [:]
+    var need: [Character: Int] = generateDict(p)
+    
+    var (left, right, valid) = (0, 0, 0)
+    while (right < s.count) {
+        // c是将要移入窗口的字符
+        let char = s[right]
+        // 右移窗口
+        right += 1
+        // 对窗口内的数据进行更新
+        ...
+        
+        // DEBUG的输出位置
+        print("window: [\(left), \(right)]")
+        
+        // 判断左侧窗口是否需要收缩
+        while (window needs shrink) {
+            // d 是将要移出窗口的字符
+            let d = s[left];
+            left += 1
+            // 对窗口进行一系列更新
+            ...
+        }
+    }
+}
+```
+
+## 简单题
+
+[219. 存在重复的元素II](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/219.%20存在重复元素%20II.playground/Contents.swift)
+
+[643. 子数组最大平均数 I](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/643.%20子数组最大平均数%20I.playground/Contents.swift)
+
+[1876. 长度为三且各字符不同的子字符串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1876.%20长度为三且各字符不同的子字符串.playground/Contents.swift)
+
+[1984. 学生分数的最小差值](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1984.%20学生分数的最小差值.playground/Contents.swift)
+
+[2269. 找到一个数字的 K 美丽值](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/2269.%20找到一个数字的%20K%20美丽值.playground/Contents.swift)
+
+## 中等题
+
+[3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
+
+[187. 重复的DNA序列](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/187.%20重复的DNA序列.playground/Contents.swift)
+
+[209. 长度最小的子数组](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/209.%20长度最小的子数组.playground/Contents.swift)
+
+[438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
+
+[567. 字符串的排列](https://leetcode.cn/problems/permutation-in-string/)
+
+[剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
+
+## 困难题
+
+[30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)
+
+[76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
+
+[220. 存在重复元素 III](https://leetcode.cn/problems/contains-duplicate-iii/)
+
+[剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
+
+
+
