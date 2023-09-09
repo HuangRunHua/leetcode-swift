@@ -59,27 +59,27 @@ func slidingWindow(_ s: [Character], _ p: [Character]) {
 
 ## 中等题
 
-[3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
+[3. 无重复字符的最长子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/热题100/3.%20无重复字符的最长子串.playground/Contents.swift)
 
 [187. 重复的DNA序列](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/187.%20重复的DNA序列.playground/Contents.swift)
 
 [209. 长度最小的子数组](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/209.%20长度最小的子数组.playground/Contents.swift)
 
-[438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
+[438. 找到字符串中所有字母异位词](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/438.%20找到字符串中所有字母异位词%20.playground/Contents.swift)
 
-[567. 字符串的排列](https://leetcode.cn/problems/permutation-in-string/)
+[567. 字符串的排列](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/567.%20字符串的排列.playground/Contents.swift)
 
-[剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
+[剑指 Offer 48. 最长不含重复字符的子字符串](https://github.com/HuangRunHua/leetcode-swift/blob/main/剑指Offer/剑指Offer48-最长不含重复字符的子字符串.playground/Contents.swift)
 
 ## 困难题
 
-[30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/)
+[30. 串联所有单词的子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/30.%20串联所有单词的子串.playground/Contents.swift)
 
-[76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
+[76. 最小覆盖子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/76.%20最小覆盖子串.playground/Contents.swift)
 
-[220. 存在重复元素 III](https://leetcode.cn/problems/contains-duplicate-iii/)
+[220. 存在重复元素 III](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/20.%20存在重复元素%20III.playground/Contents.swift)
 
-[剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
+[剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/HuangRunHua/leetcode-swift/blob/main/剑指Offer/剑指Offer59-I-滑动窗口的最大值.playground/Contents.swift)
 
 
 
