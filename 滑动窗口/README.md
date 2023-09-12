@@ -57,6 +57,10 @@ func slidingWindow(_ s: [Character], _ p: [Character]) {
 
 [2269. 找到一个数字的 K 美丽值](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/2269.%20找到一个数字的%20K%20美丽值.playground/Contents.swift)
 
+[2760. 最长奇偶子数组](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/2760.%20最长奇偶子数组.playground/Contents.swift)
+
+[LCR 056. 两数之和 IV - 输入二叉搜索树](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/LCR%20056.%20两数之和%20IV%20-%20输入二叉搜索树.playground/Contents.swift)
+
 ## 中等题
 
 [3. 无重复字符的最长子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/热题100/3.%20无重复字符的最长子串.playground/Contents.swift)
