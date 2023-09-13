@@ -59,6 +59,8 @@ func slidingWindow(_ s: [Character], _ p: [Character]) {
 
 [2760. 最长奇偶子数组](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/2760.%20最长奇偶子数组.playground/Contents.swift)
 
+[2379. 得到 K 个黑块的最少涂色次数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/2379.%20得到%20K%20个黑块的最少涂色次数.playground/Contents.swift)
+
 [LCR 056. 两数之和 IV - 输入二叉搜索树](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/LCR%20056.%20两数之和%20IV%20-%20输入二叉搜索树.playground/Contents.swift)
 
 ## 中等题
