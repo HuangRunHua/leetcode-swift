@@ -77,6 +77,8 @@ func slidingWindow(_ s: [Character], _ p: [Character]) {
 
 [剑指 Offer 48. 最长不含重复字符的子字符串](https://github.com/HuangRunHua/leetcode-swift/blob/main/剑指Offer/剑指Offer48-最长不含重复字符的子字符串.playground/Contents.swift)
 
+[395. 至少有 K 个重复字符的最长子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/395.%20至少有%20K%20个重复字符的最长子串.playground/Contents.swift)
+
 ## 困难题
 
 [30. 串联所有单词的子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/30.%20串联所有单词的子串.playground/Contents.swift)
