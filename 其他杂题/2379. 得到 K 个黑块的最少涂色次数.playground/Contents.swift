@@ -13,19 +13,14 @@ import Foundation
 /// 解释：
 /// 一种得到 7 个连续黑色块的方法是把第 0 ，3 和 4 个块涂成黑色。
 /// 得到 blocks = "BBBBBBBWBW" 。
-/// 可以证明无法用少于 3 次操作得到 7 个连续的黑块。
 class Solution {
-    /// 可以用**「滑动窗口」**来解决该问题。
     /// 我们用一个固定大小为 k 的「滑动窗口」表示出现连续 k 个黑色块的区间，我们需要将该区间全部变为黑色块，
     /// 此时我们需要的操作次数为该区间中白色块的数目，那么我们只需要在「滑动窗口」从左向右移动的过程中
     /// 记录窗口中黑色块的数目`blackCount`，则需要的涂色次数为`k-blackCount`.
     func minimumRecolors(_ blocks: String, _ k: Int) -> Int {
         let blockList: [Character] = Array(blocks)
-        var (left, right) = (0, 0)
-        /// 记录滑动窗口内黑色块的个数
-        var blackCount: Int = 0
-        /// 记录最终的结果
-        var result: Int = Int.max
+        /// 滑动窗口左边界、右边界、记录滑动窗口内黑色块的个数、记录最终的结果
+        var (left, right, blackCount, result) = (0, 0, 0, Int.max)
         while right < blockList.count {
             // MARK: 更新右边界
             let insertBlock = blockList[right]

@@ -9,7 +9,6 @@ import Foundation
 /// 输出：2
 /// 解释：子数组 [4,3] 是该条件下的长度最小的子数组。
 ///
-
 // MARK: 基于滑动窗口的解法(最优解)
 class Solution {
     func minSubArrayLen(_ target: Int, _ nums: [Int]) -> Int {

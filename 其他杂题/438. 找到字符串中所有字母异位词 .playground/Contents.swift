@@ -9,13 +9,10 @@ import Foundation
 /// 解释:
 /// 起始索引等于 0 的子串是 "cba", 它是 "abc" 的异位词。
 /// 起始索引等于 6 的子串是 "bac", 它是 "abc" 的异位词。
-///
 class Solution {
     private func generateDict(_ list: [Character]) -> [Character: Int] {
         var dict: [Character: Int] = [:]
-        for char in list {
-            dict[char, default: 0] += 1
-        }
+        for char in list { dict[char, default: 0] += 1 }
         return dict
     }
     

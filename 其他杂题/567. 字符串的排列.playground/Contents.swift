@@ -22,9 +22,7 @@ class Solution {
             /// 更新数据
             if need.keys.contains(char) {
                 window[char, default: 0] += 1
-                if window[char] == need[char] {
-                    valid += 1
-                }
+                if window[char] == need[char] { valid += 1 }
             }
             
             while (right - left >= s1.count) {
@@ -32,9 +30,7 @@ class Solution {
                 let d = s2[left]
                 left += 1
                 if need.keys.contains(d) {
-                    if window[d] == need[d] {
-                        valid -= 1
-                    }
+                    if window[d] == need[d] { valid -= 1 }
                     window[d, default: 0] -= 1
                 }
             }

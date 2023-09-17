@@ -14,20 +14,16 @@ class Solution {
     func countGoodSubstrings(_ s: String) -> Int {
         /// 将s转为Array方便索引同时加快运行速度
         let sList: [Character] = Array(s)
-        /// 最终好字符串的数量
-        var res: Int = 0
-        /// 窗口的左边界、右边界与窗口内不同字符的个数
-        var (left, right, valid) = (0, 0, 0)
+        /// 窗口的左边界、右边界、窗口内不同字符的个数、最终好字符串的数量
+        var (left, right, valid, res) = (0, 0, 0, 0)
         /// 哈希表，用于整理窗口内字符的数量，key为字符，value为字符出现的次数
         var hashMap: [Character: Int] = [:]
-        
         while right < sList.count {
             let insertChar = sList[right]
             right += 1
             /// 更新窗口内字符出现的次数
             hashMap[insertChar, default: 0] += 1
-            /// 只在字符第一次出现的时候更新valid
-            /// 后续若再次出现相同字符则不更新valid防止重复
+            /// 只在字符第一次出现的时候更新valid，后续若再次出现相同字符则不更新valid防止重复
             if hashMap[insertChar] == 1 { valid += 1 }
             /// 窗口收缩的条件
             while right - left >= 3 {
