@@ -81,6 +81,8 @@ func slidingWindow(_ s: [Character], _ p: [Character]) {
 
 [713. 乘积小于 K 的子数组](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/713.%20乘积小于%20K%20的子数组.playground/Contents.swift)
 
+[1004. 最大连续1的个数 III](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1004.%20最大连续1的个数%20III.playground/Contents.swift)
+
 ## 困难题
 
 [30. 串联所有单词的子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/30.%20串联所有单词的子串.playground/Contents.swift)
