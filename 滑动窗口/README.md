@@ -83,6 +83,12 @@ func slidingWindow(_ s: [Character], _ p: [Character]) {
 
 [1004. 最大连续1的个数 III](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1004.%20最大连续1的个数%20III.playground/Contents.swift)
 
+[248. 统计「优美子数组」](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/248.%20统计「优美子数组」.playground/Contents.swift)
+
+[1297. 子串的最大出现次数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1297.%20子串的最大出现次数.playground/Contents.swift)
+
+[1658. 将x减到0的最小操作数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1658.%20将x减到0的最小操作数.playground/Contents.swift)
+
 ## 困难题
 
 [30. 串联所有单词的子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/30.%20串联所有单词的子串.playground/Contents.swift)
