@@ -29,6 +29,31 @@ class Solution {
     }
 }
 
+class Solution2 {
+    func numSubarraysWithSum(_ nums: [Int], _ goal: Int) -> Int {
+        return slidingWindow(nums, goal) - slidingWindow(nums, goal - 1)
+    }
+    func slidingWindow(_ nums: [Int], _ goal: Int) -> Int {
+        var (left, right) = (0, 0)
+        var (lsum, rsum) = (0, 0)
+        var result: Int = 0
+        while right < nums.count {
+            let insertNum = nums[right]
+            rsum += insertNum
+            right += 1
+            
+            while (rsum - lsum > goal) && (left < right) {
+                let popNum = nums[left]
+                // 计算左指针的前缀和
+                lsum += popNum
+                left += 1
+            }
+            result += (right - left)
+        }
+        return result
+    }
+}
+
 let solution = Solution()
 print(solution.numSubarraysWithSum([1,0,1,0,1], 2))
 print(solution.numSubarraysWithSum([0,0,0,0,0], 0))
