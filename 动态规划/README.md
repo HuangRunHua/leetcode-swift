@@ -30,6 +30,12 @@
 
 [LCR 127. 跳跃训练](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer10-II-青蛙跳台阶问题.playground/Contents.swift)
 
+[1646. 获取生成数组中的最大值](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1646.%20获取生成数组中的最大值.playground/Contents.swift)
+
+[1137. 第 N 个泰波那契数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1137.%20第%20N%20个泰波那契数.playground/Contents.swift)
+
+[746. 使用最小花费爬楼梯](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/746.%20使用最小花费爬楼梯.playground/Contents.swift)
+
 
 ## 中等
 
