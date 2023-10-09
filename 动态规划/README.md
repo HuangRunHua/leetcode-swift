@@ -38,6 +38,8 @@
 
 [338. 比特位计数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/338.%20比特位计数.playground/Contents.swift)
 
+[LCS 01. 下载插件](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/LCS%2001.%20下载插件.playground/Contents.swift)
+
 
 ## 中等
 
