@@ -75,14 +75,14 @@ class Solution {
         /// cur: 当前一轮连续1的个数，遇到0就重制为0
         /// ones: 当前一轮从0开始往前数连续1的个数，遇到第一个0就默认等于当前一轮的最大1的个数
         /// result: 最终结果
-        var (cur, insert, result) = (0, 0, 0)
+        var (cur, ones, result) = (0, 0, 0)
         for i in 0..<32 {
             if (num & (1 << i)) > 0 {
                 (cur, ones) = (cur + 1, ones + 1)
             } else {
                 (ones, cur) = (cur + 1, 0)
             }
-            result = max(result, insert)
+            result = max(result, ones)
         }
         return result
     }
