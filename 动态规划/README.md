@@ -40,6 +40,10 @@
 
 [LCS 01. 下载插件](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/LCS%2001.%20下载插件.playground/Contents.swift)
 
+[面试题 16.17. 连续数列](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/面试题%2016.17.%20连续数列.playground/Contents.swift)
+
+[面试题 17.16. 按摩师](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/面试题%2017.16.%20按摩师.playground/Contents.swift)
+
 
 ## 中等
 
