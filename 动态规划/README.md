@@ -44,6 +44,8 @@
 
 [面试题 17.16. 按摩师](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/面试题%2017.16.%20按摩师.playground/Contents.swift)
 
+[面试题 08.01. 三步问题](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/面试题%2008.01.%20三步问题.playground/Contents.swift)
+
 
 ## 中等
 
