@@ -67,6 +67,10 @@
 
 [5. 最长回文子串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/5.%20最长回文子串.playground/Contents.swift)
 
+[22. 括号生成](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/22.%20括号生成.playground/Contents.swift)
+
+[55. 跳跃游戏](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/55.%20跳跃游戏.playground/Contents.swift)
+
 ## 困难
 
 [剑指 Offer 19. 正则表达式匹配](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer19-正则表达式匹配.playground/Contents.swift)
