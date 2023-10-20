@@ -73,6 +73,10 @@
 
 [45. 跳跃游戏 II](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/45.%20跳跃游戏%20II.playground/Contents.swift)
 
+[62. 不同路径](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/62.%20不同路径.playground/Contents.swift)
+
+[63. 不同路径 II](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/63.%20不同路径%20II.playground/Contents.swift)
+
 ## 困难
 
 [剑指 Offer 19. 正则表达式匹配](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer19-正则表达式匹配.playground/Contents.swift)
