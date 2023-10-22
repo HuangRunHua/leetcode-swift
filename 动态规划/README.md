@@ -79,6 +79,8 @@
 
 [64. 最小路径和](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/64.%20最小路径和.playground/Contents.swift)
 
+[91. 解码方法](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/91.%20解码方法.playground/Contents.swift)
+
 ## 困难
 
 [剑指 Offer 19. 正则表达式匹配](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer19-正则表达式匹配.playground/Contents.swift)
