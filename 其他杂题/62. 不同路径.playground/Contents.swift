@@ -22,6 +22,7 @@ class Solution {
 }
 
 let solution = Solution()
-print(solution.uniquePaths(3,7))   // 28
-print(solution.uniquePaths(3,2))   // 3
-print(solution.uniquePaths(3,3))   // 6
+//print(solution.uniquePaths(3,7))   // 28
+//print(solution.uniquePaths(3,2))   // 3
+//print(solution.uniquePaths(3,3))   // 6
+print(solution.uniquePaths(5,5))   // 6
