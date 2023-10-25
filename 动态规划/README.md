@@ -83,6 +83,8 @@
 
 [122. 买卖股票的最佳时机 II](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/122.%20买卖股票的最佳时机%20II.playground/Contents.swift)
 
+[131. 分割回文串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/131.%20分割回文串.playground/Contents.swift)
+
 ## 困难
 
 [剑指 Offer 19. 正则表达式匹配](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer19-正则表达式匹配.playground/Contents.swift)
