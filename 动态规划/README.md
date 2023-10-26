@@ -85,6 +85,8 @@
 
 [131. 分割回文串](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/131.%20分割回文串.playground/Contents.swift)
 
+[198. 打家劫舍](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/198.%20打家劫舍.playground/Contents.swift)
+
 ## 困难
 
 [剑指 Offer 19. 正则表达式匹配](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer19-正则表达式匹配.playground/Contents.swift)
