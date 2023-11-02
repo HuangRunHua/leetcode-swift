@@ -93,6 +93,8 @@
 
 [313. 超级丑数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/313.%20超级丑数.playground/Contents.swift)
 
+[494. 目标和](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/494.%20目标和.playground/Contents.swift)
+
 ## 困难
 
 [剑指 Offer 19. 正则表达式匹配](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer19-正则表达式匹配.playground/Contents.swift)
