@@ -2,14 +2,6 @@
 
 本文件夹只包含`README`文档，文档主要整理平时刷题时候遇到的动态规划的问题以及对应的题解链接，题解的代码存储在路径`其他杂题/`中。
 
-**动态规划**是一种在数学、管理科学、计算机科学、经济学和生物信息学中使用的，通过把原问题分解为相对简单的子问题的方式求解复杂问题的方法。
-
-动态规划常常适用于有重叠子问题和最优子结构性质的问题，并且记录所有子问题的结果，因此动态规划方法所耗时间往往远少于朴素解法。
-
-动态规划有自底向上和自顶向下两种解决问题的方式。自顶向下即记忆化递归，自底向上就是递推。
-
-使用动态规划解决的问题有个明显的特点，一旦一个子问题的求解得到结果，以后的计算过程就不会修改它，这样的特点叫做无后效性，求解问题的过程形成了一张有向无环图。动态规划只解决每个子问题一次，具有天然剪枝的功能，从而减少计算量。
-
 ## 简单题
 
 [剑指 Offer 10- I. 斐波那契数列](https://github.com/HuangRunHua/leetcode-swift/tree/main/剑指Offer/剑指Offer10-I-斐波那契数列.playground/Contents.swift)
@@ -96,6 +88,8 @@
 [494. 目标和](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/494.%20目标和.playground/Contents.swift)
 
 [264. 丑数 II](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/264.%20丑数%20II.playground/Contents.swift)
+
+[72. 编辑距离](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/72.%20编辑距离.playground/Contents.swift)
 
 ## 困难
 
