@@ -90,6 +90,7 @@
 [264. 丑数 II](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/264.%20丑数%20II.playground/Contents.swift)
 
 [72. 编辑距离](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/72.%20编辑距离.playground/Contents.swift)
+[343. 整数拆分](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/343.%20整数拆分.playground/Contents.swift)
 
 ## 困难
 
