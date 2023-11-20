@@ -88,6 +88,7 @@ func slidingWindow(_ s: [Character], _ p: [Character]) {
 [1297. 子串的最大出现次数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1297.%20子串的最大出现次数.playground/Contents.swift)
 
 [1658. 将x减到0的最小操作数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/1658.%20将x减到0的最小操作数.playground/Contents.swift)
+[413. 等差数列划分](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/413.%20等差数列划分.playground/Contents.swift)
 
 ## 困难题
 
