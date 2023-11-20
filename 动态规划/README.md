@@ -93,6 +93,7 @@
 [343. 整数拆分](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/343.%20整数拆分.playground/Contents.swift)
 [279. 完全平方数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/279.%20完全平方数.playground/Contents.swift)
 [139. 单词拆分](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/139.%20单词拆分.playground/Contents.swift)
+[413. 等差数列划分](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/413.%20等差数列划分.playground/Contents.swift)
 
 ## 困难
 
