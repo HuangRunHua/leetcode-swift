@@ -94,6 +94,7 @@
 [279. 完全平方数](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/279.%20完全平方数.playground/Contents.swift)
 [139. 单词拆分](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/139.%20单词拆分.playground/Contents.swift)
 [413. 等差数列划分](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/413.%20等差数列划分.playground/Contents.swift)
+[376. 摆动序列](https://github.com/HuangRunHua/leetcode-swift/blob/main/其他杂题/376.%20摆动序列.playground/Contents.swift)
 
 ## 困难
 
