@@ -16,10 +16,8 @@ class Solution {
         /// `target`中当前模拟插入的元素的索引
         var index: Int = 0
         while sum < target {
-            let x = coins[index]
-            /// `index < coins.count`用于防止数组访问越界
-            if (index < coins.count) && (sum >= x - 1) {
-                sum += x
+            if (index < coins.count) && (sum >= coins[index] - 1) {
+                sum += coins[index]
                 index += 1
             } else {
                 sum += (sum + 1)
